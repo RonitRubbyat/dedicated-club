@@ -1,0 +1,7 @@
+.gray-color{
+    color: gray;
+}
+.userHealth{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+}

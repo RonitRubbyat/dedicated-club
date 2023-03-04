@@ -2,7 +2,7 @@ import React from 'react';
 import './Cards.css';
 
 const Cards = ({ cards }) => {
-    console.log(cards)
+    // console.log(cards);
     const { name, age, img, time, about } = cards
     return (
         <div className='card-container'>
