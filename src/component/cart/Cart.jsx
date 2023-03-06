@@ -8,12 +8,16 @@ import { addToStorage, getFromStorage } from '../../utilities/fakebd';
 const Cart = ({ exTime }) => {
     const [breakT, setBreakT] = useState(0);
 
-    const [newBr , setNewBr] = useState(0);
-    useEffect(()=>{
+    const [newBr, setNewBr] = useState(0);
+    useEffect(() => {
         const getBrTime = getFromStorage();
-        setNewBr(getBrTime.break);
-    },[breakT])
-    console.log(newBr);
+        if (getBrTime.break) {
+            setNewBr(getBrTime.break);
+        } else {
+            setBreakT(0);
+        }
+    }, [breakT])
+    // console.log(newBr);
 
     const breakTime = brTime => {
         setBreakT(brTime);
