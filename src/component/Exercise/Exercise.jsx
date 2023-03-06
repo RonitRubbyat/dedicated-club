@@ -1,7 +1,9 @@
-import React from 'react';
+// import React, { useState } from 'react';
 import './Exercise.css'
 
 const Exercise = ({exTime, brTime}) => {
+    // const [data, setData] = useState(0);
+
     return (
         <div>
             <h2>Exercise Details</h2>

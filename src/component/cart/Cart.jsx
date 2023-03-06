@@ -1,14 +1,23 @@
-import React, { useState } from 'react';
+import React, { useEffect, useState } from 'react';
 import './Cart.css';
 import AddABreak from '../AddABreak/AddABreak';
 import Exercise from '../Exercise/Exercise';
 import UserInfo from '../user-info/UserInfo';
+import { addToStorage, getFromStorage } from '../../utilities/fakebd';
 
 const Cart = ({ exTime }) => {
     const [breakT, setBreakT] = useState(0);
 
+    const [newBr , setNewBr] = useState(0);
+    useEffect(()=>{
+        const getBrTime = getFromStorage();
+        setNewBr(getBrTime.break);
+    },[breakT])
+    console.log(newBr);
+
     const breakTime = brTime => {
         setBreakT(brTime);
+        addToStorage(brTime);
     }
     return (
         <div className='cart-container'>
@@ -18,7 +27,7 @@ const Cart = ({ exTime }) => {
             ></AddABreak>
             <Exercise
                 exTime={exTime}
-                brTime={breakT}
+                brTime={newBr}
             ></Exercise>
         </div>
     );
