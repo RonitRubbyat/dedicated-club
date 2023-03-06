@@ -1,16 +1,19 @@
-import { faLocation, faMapLocation } from '@fortawesome/free-solid-svg-icons';
+import { faMapLocation } from '@fortawesome/free-solid-svg-icons';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import React from 'react';
-import './UserInfo.css'
+import './UserInfo.css';
+import img from './pic1.jpg'
 
 const UserInfo = () => {
     return (
         <div>
             <div className="userProfile">
-                <img className='user-img' src="../../../public/pic1.png" alt="user" />
+                <div className="user-personal-info">
+                <img className='user-img' src={img} alt="user" />
                 <div>
                     <h1>Ronit Rubbyat Sultan</h1>
                     <h3 className='gray-color'><FontAwesomeIcon icon={faMapLocation}></FontAwesomeIcon> Dhaka, Bangladesh</h3>
+                </div>
                 </div>
                 <div className="userHealth">
                     <div>
