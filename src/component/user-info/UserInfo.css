@@ -1,7 +1,22 @@
+/* utilities */
 .gray-color{
     color: gray;
+}
+/* user css */
+.user-img{
+    max-width: 150px;
+    max-height: 150px;
+    border-radius: 50%;
 }
 .userHealth{
     display: grid;
     grid-template-columns: repeat(3, 1fr);
+    background-color: rgb(242, 244, 250);
+    padding:0 8px;
+    border-radius: 15px;
+}
+
+.userHealth div h3{
+    margin-left: 0;
+    margin-right: 15px;
 }

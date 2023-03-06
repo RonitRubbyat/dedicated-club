@@ -1,0 +1,28 @@
+.time {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    background-color: rgb(242, 244, 250);
+    border-radius: 15px;
+    padding: 0 15px;
+    margin-bottom: 20px;
+}
+
+.complete-btn {
+    background-color: rgb(66, 5, 124);
+    color: #fff;
+    width: 100%;
+    border: none;
+    border-radius: 15px;
+    padding: 20px 0;
+    font-size: 17px;
+}
+
+.complete-btn:hover {
+    cursor: pointer;
+}
+
+.complete-btn:focus {
+    background-color: green;
+}

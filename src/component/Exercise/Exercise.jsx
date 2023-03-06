@@ -1,9 +1,19 @@
 import React from 'react';
+import './Exercise.css'
 
-const Exercise = () => {
+const Exercise = ({exTime, brTime}) => {
     return (
         <div>
-            <h1>Exercise Details</h1>
+            <h2>Exercise Details</h2>
+            <div className='time'>
+                <h3>Exercise time</h3>
+                <h3>{exTime} sec</h3>
+            </div>
+            <div className='time'>
+                <h3>Break time</h3>
+                <h3>{brTime} sec</h3>
+            </div>
+            <button className='complete-btn'>Activity Completed</button>
         </div>
     );
 };

@@ -1,8 +1,9 @@
 import React from 'react';
 import './Cards.css';
 
-const Cards = ({ cards }) => {
+const Cards = ({ cards, exerciseTime }) => {
     // console.log(cards);
+    
     const { name, age, img, time, about } = cards
     return (
         <div className='card-container'>
@@ -15,7 +16,7 @@ const Cards = ({ cards }) => {
                 <h4>For Age: {age}</h4>
                 <h4>Time Required: {time}s</h4>
             </div>
-            <button className='card-btn'>Add to list</button>
+            <button className='card-btn' onClick={()=> exerciseTime(time)}>Add to list</button>
         </div>
     );
 };

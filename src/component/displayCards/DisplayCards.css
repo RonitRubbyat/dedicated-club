@@ -1,7 +1,16 @@
+.header{
+    padding: 80px 50px;
+    width: 100%;
+}
+
+.header h1{
+    margin: 0;
+    color: rgb(66, 5, 124);
+}
+
 .container{
     display: grid;
     grid-template-columns: 4fr 1fr;
-    margin-bottom: 80px;
 }
 
 .cards-container{
@@ -14,7 +23,9 @@
     align-items: center;
     justify-content: center;
 }
-
+.cart-container{
+    background-color: #fff;
+}
 @media screen and (max-width: 700px) {
     .cards-container{
         grid-template-columns: repeat(1, 1fr);

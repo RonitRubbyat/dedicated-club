@@ -7,9 +7,9 @@ const UserInfo = () => {
     return (
         <div>
             <div className="userProfile">
-                <img src="" alt="" />
+                <img className='user-img' src="../../../public/pic1.png" alt="user" />
                 <div>
-                    <h1>Ronit Rubbyat</h1>
+                    <h1>Ronit Rubbyat Sultan</h1>
                     <h3 className='gray-color'><FontAwesomeIcon icon={faMapLocation}></FontAwesomeIcon> Dhaka, Bangladesh</h3>
                 </div>
                 <div className="userHealth">
